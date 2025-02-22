@@ -1,6 +1,11 @@
-# vue-canvas-table
+# vue-table
 
-This template should help get you started developing with Vue 3 in Vite.
+A simple table component for Vue 3.
+三种表格
+
+- 基础表格
+- canvas表格
+- 虚拟表格
 
 ## Recommended IDE Setup
 
