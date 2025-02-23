@@ -1,6 +1,7 @@
 <script setup>
 import NormalTableVue from './components/table/NormalTable.vue'
 import CanvasTableVue from './components/table/CanvasTable.vue'
+import VirtualTableVue from './components/table/VirtualTable.vue'
 import { ref, computed } from 'vue'
 
 const TYPE_ENUM = {
@@ -19,6 +20,11 @@ const btns = [
     name: 'Canvas',
     type: TYPE_ENUM.CANVAS,
   },
+  {
+    id: 3,
+    name: 'Virtual',
+    type: TYPE_ENUM.VIRTUAL,
+  },
 ]
 const tableType = ref(TYPE_ENUM.CANVAS)
 const tableComp = computed(() => {
@@ -27,6 +33,8 @@ const tableComp = computed(() => {
       return NormalTableVue
     case TYPE_ENUM.CANVAS:
       return CanvasTableVue
+    case TYPE_ENUM.VIRTUAL:
+      return VirtualTableVue
     default:
       return null
   }

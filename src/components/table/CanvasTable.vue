@@ -36,7 +36,7 @@ const getPixelRatio = () => {
 const canvas = ref(null)
 const w = ref(800)
 const h = ref(600)
-const theme = 'yellow' // 'yellow' | 'white'
+const theme = 'black' // 'yellow' | 'black'
 
 const pixelRatio = getPixelRatio()
 const cellWidth = 200
@@ -169,6 +169,15 @@ onUnmounted(() => {
 </template>
 
 <style>
+input {
+  width: 200px;
+  height: 30px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0 10px;
+  outline: none;
+}
 canvas {
   border: 1px solid #ccc;
   width: 800px;

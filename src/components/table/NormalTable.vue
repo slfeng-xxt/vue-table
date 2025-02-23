@@ -50,7 +50,8 @@ const data = {
 
 <style>
 table {
-  width: 100%;
+  width: 800px;
+  height: 600px;
   border-collapse: collapse;
 }
 

@@ -1,7 +1,8 @@
 # vue-table
 
 A simple table component for Vue 3.
-三种表格
+
+## 三种表格
 
 - 基础表格
 - canvas表格
